@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: white;
+    box-sizing: border-box;
+    
+}
+
+.cabecalho{
+    margin: auto; 
+    width: 80%; 
+    padding: 15px 0px; 
+    background-color:white;
+} 
+
+
+.topnav {
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgb(59, 59, 59);
+    margin-top: 10px;
+    
+}
+
+.topnav li{
+    display: inline;
+}
+
+.topnav a {
+    display: inline-block;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 14px 35px;
+    text-decoration: none;
+}
+
+/* animação para quando passar o mouse em cima de uma área de seleção */
+.topnav a:hover {
+    background-color: rgb(206, 0, 0);
+    color: #f1f1f1;
+}
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    padding: 20px;
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.content {
+    background-color: white;
+    padding: 20px;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #ddd;
+    padding: 20px;
+    margin-top: 70px;
+}
+
+.copy {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-25 {
+    position: fixed;
+    bottom: 0;
+    text-align: left;
+    float: left;
+    width: 25%;
+    margin: auto;
+}
+
+.footer-50 {
+    position: fixed;
+    bottom: 0;
+    text-align: left;
+    float: left;
+    width: 50%;
+    margin: auto;
+}
+
+.footer-25 a {
+    text-decoration: none;
+    color: rgb(47, 47, 47);
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn,
+    .footer-25,
+    .footer-50 {
+        width: 100%;
+        padding: 0;
+        margin: auto;
+
+    }
+
+    .footer {
+        padding-top: 20px;
+        margin-top: 20px;
+        text-align: center;
+
+    }
+
+    .footer-25 {
+        text-align: center;
+    }
+     
+
+}
+
+@media screen and (min-width: 800px){
+    .topnav{
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+input[type=text],
+select,
+textarea,
+input[type=email],
+input[type=tel] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(219, 0, 0);
+}
+
+label {
+    padding: 12px 20px;
+    display: inline-block;
+}
+
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.cadastro {
+    background-color: white;
+    padding-top: 20px;
+}
+
+.containers {
+    margin: auto;
+    width: 80%;
+    border-radius: 20px;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+.containers h1 {
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 700px) {
+
+    .col-25,
+    .col-75,
+    .containers,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+
+    }
+
+    input[type=submit] {
+        margin-top: 10px;
+    }
+}
+
+table {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+tr,
+td {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    
+}
+
+
+th {
+    height: 70px;
+    background-color: rgb(206, 0, 0);
+    color: white;
+}
+
+div.polaroid {
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+
+div.polaroid2 {
+    margin: auto;
+    border-radius: 10px;
+    width: 95%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+
+}
+div.polaroid3 {
+    margin: auto;
+    border-radius: 10px;
+    width: 95%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: left;
+    height: 460px;
+}
+
+.polaroid2:hover{
+    text-decoration: underline ;
+    color: rgb(219, 0, 0) ;
+}
+
+.polaroid3:hover{
+    width: 97%;
+    height: 470px;
+}
+
+div.caixa {
+    padding: 10px;
+}
